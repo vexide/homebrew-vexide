@@ -1,25 +1,25 @@
 class SwiftV5 < Formula
   desc "Create VEX V5 programs in Swift"
   homepage "https://github.com/vexide/swift-v5"
-  version "0.1.0-rc.4"
+  version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0-rc.4/swift-v5-aarch64-apple-darwin.tar.xz"
-      sha256 "029a20fbdc9ed42340e27016ac1a4b91c2a3c57fa0c0eb4b73c92f03cb610d21"
+      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0/swift-v5-aarch64-apple-darwin.tar.xz"
+      sha256 "d65bfdd5c010ccca8da3262f75d0203c36dadf2b1afb0d40b14c48c573c2cf1e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0-rc.4/swift-v5-x86_64-apple-darwin.tar.xz"
-      sha256 "37b2cbb642b130ef7af154ee78d1e61c5d7fe5c3c7a139a2a888a09335908ba7"
+      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0/swift-v5-x86_64-apple-darwin.tar.xz"
+      sha256 "e31657bf94d923db72c986eb65a616c0c172bde252c7ad2bbf61dbeba8a5758b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0-rc.4/swift-v5-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "28ab4e47b27693d195a1620b41a4e6196443b533b02819a282dcc530e1d6e215"
+      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0/swift-v5-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c99464735c424a499c5b3c0013114b3c57c389fcf1ef532669c7716eea885b8c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0-rc.4/swift-v5-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2b48f5fda62dafdde36e6f7e47d7a6e15eb2062694e91ff47352153968782ffa"
+      url "https://github.com/vexide/swift-v5/releases/download/v0.1.0/swift-v5-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f6ed03138e2eebbda55ae917481142765e8302e346806164708119e816395b59"
     end
   end
 
