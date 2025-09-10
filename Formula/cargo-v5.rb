@@ -1,20 +1,20 @@
 class CargoV5 < Formula
-  desc "A cargo subcommand for managing V5 Brain Rust projects"
+  desc "Cargo subcommand for managing V5 Brain Rust projects"
   homepage "https://vexide.dev"
-  version "0.11.0-alpha.1"
+  version "0.11.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vexide/cargo-pros/releases/download/v0.11.0-alpha.1/cargo-v5-aarch64-apple-darwin.tar.xz"
-      sha256 "bb58a72a424fbf447db1c76a108859aba8939bf3f22c549e44e74bf3de326f7e"
+      url "https://github.com/vexide/cargo-v5/releases/download/v0.11.0/cargo-v5-aarch64-apple-darwin.tar.xz"
+      sha256 "b4b0e22fc43fefde07d63cc7eca70c99ae2f145363edbe5a8f243bb476d13553"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vexide/cargo-pros/releases/download/v0.11.0-alpha.1/cargo-v5-x86_64-apple-darwin.tar.xz"
-      sha256 "3fbbf476e485dc7a6fc62c556e78aa8b198cca2cdeb446246061a5438a4180ab"
+      url "https://github.com/vexide/cargo-v5/releases/download/v0.11.0/cargo-v5-x86_64-apple-darwin.tar.xz"
+      sha256 "85907740a2918781a889cf1faa5a31c761e0c5a67c9c446525a3bf90a144844b"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vexide/cargo-pros/releases/download/v0.11.0-alpha.1/cargo-v5-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "1e7ae919e66b3383f78f9c9d8101cdac63b30cf69fff7b6dd352d7e381deaf36"
+    url "https://github.com/vexide/cargo-v5/releases/download/v0.11.0/cargo-v5-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "d11cb4609639767e04acb179298d11eed32825b29788baf26e17f9521fcdbb8b"
   end
   license "MIT"
 
