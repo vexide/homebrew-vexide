@@ -5,16 +5,16 @@ class CargoV5 < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/vexide/cargo-v5/releases/download/v0.11.0/cargo-v5-aarch64-apple-darwin.tar.xz"
-      sha256 "b4b0e22fc43fefde07d63cc7eca70c99ae2f145363edbe5a8f243bb476d13553"
+      sha256 "c75da6bdff88a9d3d6fee49d6893cc135d34d2900ff195e91fbd2f70b7b6bdd0"
     end
     if Hardware::CPU.intel?
       url "https://github.com/vexide/cargo-v5/releases/download/v0.11.0/cargo-v5-x86_64-apple-darwin.tar.xz"
-      sha256 "85907740a2918781a889cf1faa5a31c761e0c5a67c9c446525a3bf90a144844b"
+      sha256 "5ed5cf23748f2d94c407c450336704591cdae7e634328aa1b0479d07aad5ec82"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/vexide/cargo-v5/releases/download/v0.11.0/cargo-v5-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "d11cb4609639767e04acb179298d11eed32825b29788baf26e17f9521fcdbb8b"
+    sha256 "3d5bb7eb6bf3599cad962624faf2304a34667b276efe1b89789065c2f288a8e5"
   end
   license "MIT"
 
