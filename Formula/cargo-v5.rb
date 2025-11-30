@@ -1,20 +1,20 @@
 class CargoV5 < Formula
-  desc "Cargo tool for working with VEX V5 Rust projects."
+  desc "Cargo tool for working with VEX V5 Rust projects"
   homepage "https://vexide.dev"
-  version "0.12.0"
+  version "0.12.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vexide/cargo-v5/releases/download/v0.12.0/cargo-v5-aarch64-apple-darwin.tar.xz"
-      sha256 "e499d401fc3e0edbdf8080fe813c227be877ab31d3ce4cbe663b2bb471d4edd2"
+      url "https://github.com/vexide/cargo-v5/releases/download/v0.12.1/cargo-v5-aarch64-apple-darwin.tar.xz"
+      sha256 "d0c1253989fdd7c515c725eb37946de805f18b59a6757b10029c2c2edbe24e96"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vexide/cargo-v5/releases/download/v0.12.0/cargo-v5-x86_64-apple-darwin.tar.xz"
-      sha256 "c206994231d2d2eb8add65acd687621483e8919d5c47734bb5fb68f80939ef0a"
+      url "https://github.com/vexide/cargo-v5/releases/download/v0.12.1/cargo-v5-x86_64-apple-darwin.tar.xz"
+      sha256 "763b4409c0ea832304a88352629c9b5adc19334edc62fa6b0487c64235a65543"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vexide/cargo-v5/releases/download/v0.12.0/cargo-v5-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "015e29cbadffddf163fdc24b596ca733a1d48a0ce264e6211c570748928c0f71"
+    url "https://github.com/vexide/cargo-v5/releases/download/v0.12.1/cargo-v5-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "bc17a3c61c426e5186dc79029c271fc6503b6c0e6527f762695db1b680bb3803"
   end
   license "MIT"
 
